@@ -1,0 +1,66 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+* {
+    transition: .5s ease-out;
+}
+
+body .dontHaveAccountText span{
+    color: $soft-purple;
+}
+
+body.dark .alreadyHaveAccountText span {
+    color: $soft-purple;
+}
+
+//dark mode section
+
+body.dark .backCard{
+    @include reverseAverageDarkContent();
+}
+
+body.dark .darkModeBtn{
+    background: $dark-color;
+}
+
+body.dark .darkModeBtn{
+    padding-left: 38px;
+}
+
+body.dark .darkModeBtn div{
+    background: $light-color;
+}
+
+
+body.dark .backCard .wholeLogo{
+    background: $dark-color;
+}
+
+
+body.dark .backCard .wholeLogo .ghostLogo {
+    background: $light-color;
+}
+
+body.dark .backCard .wholeLogo .ghostLogo .eyesLogo{
+    background: $dark-color;
+}
+
+body.dark .mainCard{
+    @include averageDarkContent();
+}
+
+body.dark .mainCard input{
+    @include AverageDarkContentInputs();
+}
+
+body.dark .mainCard button{
+    @include AverageDarkContentButtons();
+    &:hover {
+        background: rgb(75, 59, 134);
+    }
+}
+
+body.dark .signUpTitle {
+    color: $text-black;
+}
+

@@ -1,0 +1,62 @@
+* {
+  transition: 0.5s ease-out;
+}
+
+body .dontHaveAccountText span {
+  color: #6643b5;
+}
+
+body.dark .alreadyHaveAccountText span {
+  color: #6643b5;
+}
+
+body.dark .backCard {
+  background: #fff;
+  color: #000;
+}
+
+body.dark .darkModeBtn {
+  background: #000;
+}
+
+body.dark .darkModeBtn {
+  padding-left: 38px;
+}
+
+body.dark .darkModeBtn div {
+  background: #fff;
+}
+
+body.dark .backCard .wholeLogo {
+  background: #000;
+}
+
+body.dark .backCard .wholeLogo .ghostLogo {
+  background: #fff;
+}
+
+body.dark .backCard .wholeLogo .ghostLogo .eyesLogo {
+  background: #000;
+}
+
+body.dark .mainCard {
+  background: #000;
+  color: rgba(255, 255, 255, 0.8980392157);
+}
+
+body.dark .mainCard input {
+  background: #181821;
+  color: rgba(255, 255, 255, 0.8980392157);
+}
+
+body.dark .mainCard button {
+  background: #6643b5;
+  color: rgba(255, 255, 255, 0.8980392157);
+}
+body.dark .mainCard button:hover {
+  background: rgb(75, 59, 134);
+}
+
+body.dark .signUpTitle {
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

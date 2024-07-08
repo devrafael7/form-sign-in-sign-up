@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="w-full h-min-screen">
-    <div class="w-full h-screen bg-black flex justify-center pt-14">
-        <div class="w-28 h-28 rounded-2xl bg-white rounded-tr-none flex justify-center items-center">
-            <div class="w-1/2 h-1/2 rounded-full bg-black rounded-b-none flex justify-center pt-5 gap-2">
-                <div class="w-3 h-3 bg-white rounded-full"></div>
-                <div class="w-3 h-3 bg-white rounded-full"></div>
+    <div class="w-full h-screen bg-black flex justify-center pt-14 backCard relative">
+        <div class="darkModeBtn cursor-pointer w-16 h-7 bg-white absolute top-7 left-5 rounded-full px-1 py-1">
+            <div class="w-5 h-full bg-black rounded-full">
+    
+            </div>
+        </div>
+        <div class="wholeLogo w-28 h-28 rounded-2xl bg-white rounded-tr-none flex justify-center items-center">
+            <div class="ghostLogo w-1/2 h-1/2 rounded-full bg-black rounded-b-none flex justify-center pt-5 gap-2">
+                <div class="eyesLogo w-3 h-3 bg-white rounded-full"></div>
+                <div class="eyesLogo w-3 h-3 bg-white rounded-full"></div>
             </div>
         </div>
 
-        <div id="card-login" class="py-5 px-7 h-4/6 bg-gray-100 w-full absolute bottom-0 flex flex-col items-center pt-10 gap-2 justify-between">
+        <div id="card-login" class="mainCard py-5 px-7 h-4/6 bg-gray-100 w-full absolute bottom-0 flex flex-col items-center pt-10 gap-2 justify-between">
             <div class="flex flex-col items-center w-full h-auto">
                 <h1 class="text-3xl font-medium mb-7">Sign In</h1>
                 <input name="existing_name" class="w-full rounded-lg bg-white h-12 px-3 mb-2 outline-none" type="email" placeholder="Type your email">
@@ -23,7 +29,7 @@
                 <button name="existing_submit" class="w-full bg-black text-white font-normal text-lg h-14 rounded-lg hover:bg-opacity-90 cursor-pointer" type="submit">Sign In</button>
             </div>
             <a href="sign-up.html">
-                <p class="font-semibold">Don't have any account? Sign Up</p>
+                <p class="dontHaveAccountText font-semibold">Don't have any account? <span>Sign Up</span></p>
             </a>
         </div>     
     </div>
@@ -39,5 +45,7 @@
             border-top-left-radius: 70px;
         }
     </style>
+
+    <script src="script.js"></script>
 </body>
 </html>

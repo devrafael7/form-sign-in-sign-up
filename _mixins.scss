@@ -1,0 +1,23 @@
+@import 'variables.scss';
+
+//mixins section
+
+@mixin averageDarkContent {
+    background: $dark-color;
+    color: $text-white;
+}
+
+@mixin reverseAverageDarkContent {
+    background: $light-color;
+    color: $text-black;
+}
+
+@mixin AverageDarkContentInputs {
+    background: $soft-dark-color;
+    color: $text-white;
+}
+
+@mixin AverageDarkContentButtons {
+    background: $soft-purple;
+    color: $text-white;
+}
