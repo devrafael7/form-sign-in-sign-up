@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="w-full h-min-screen">
+    <div class="w-full h-screen bg-black flex justify-center pt-14">
+        <div class="w-28 h-28 rounded-2xl bg-white rounded-tr-none flex justify-center items-center">
+            <div class="w-1/2 h-1/2 rounded-full bg-black rounded-b-none flex justify-center pt-5 gap-2">
+                <div class="w-3 h-3 bg-white rounded-full"></div>
+                <div class="w-3 h-3 bg-white rounded-full"></div>
+            </div>
+        </div>
+
+        <div id="card-login" class="py-5 px-7 h-4/6 bg-gray-100 w-full absolute bottom-0 flex flex-col items-center pt-10 gap-2 justify-between">
+            <div class="flex flex-col items-center w-full h-auto">
+                <h1 class="text-3xl font-medium mb-7">Sign In</h1>
+                <input name="existing_name" class="w-full rounded-lg bg-white h-12 px-3 mb-2 outline-none" type="email" placeholder="Type your email">
+                <input name="existing_email" class="w-full rounded-lg bg-white h-12 px-3 mb-2 outline-none" type="text" placeholder="Enter your password">
+                <button name="existing_submit" class="w-full bg-black text-white font-normal text-lg h-14 rounded-lg hover:bg-opacity-90 cursor-pointer" type="submit">Sign In</button>
+            </div>
+            <a href="">
+                <p class="font-semibold">Don't have any account? Sign Up</p>
+            </a>
+        </div>     
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+        #card-login {
+            border-top-left-radius: 70px;
+        }
+    </style>
 </body>
 </html>
