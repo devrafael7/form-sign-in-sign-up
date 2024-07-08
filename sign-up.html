@@ -12,20 +12,21 @@
         <img class="whiteBackArrow backArrow absolute top-10 left-5 transform rotate-180 w-8 h-8" src="icons/icons8-seta-longa-à-direita-24.png" alt="">
         <img class="blackBackArrow backArrow absolute top-10 left-5 transform rotate-180 w-8 h-8 hidden" src="icons/icons8-seta-longa-à-direita-30.png" alt="">
         <h1  class="signUpTitle absolute top-10 text-3xl text-white font-light">Sign Up</h1>
-        <div id="card-sign-up" class="mainCard py-5 px-7 h-5/6 bg-gray-100 w-full absolute bottom-0 flex flex-col items-center pt-10 gap-3 ">
+
+        <form action="login.php" method="post" id="card-sign-up" class="mainCard py-5 px-7 h-5/6 bg-gray-100 w-full absolute bottom-0 flex flex-col items-center pt-10 gap-3 ">
             <div class="flex flex-col items-center w-full h-auto mb-10">
-                <input name="first_name" class="w-full rounded-lg bg-white h-14 px-3 mb-3 mt-2 outline-none" type="text" placeholder="First name">
-                <input name="last_name" class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="text" placeholder="Last name">
-                <input name="email" class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="email" placeholder="Email">
-                <input name="password" class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="password" placeholder="Create a password">
-                <input class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="password" placeholder="Confirm password">
+                <input name="first_name" class="w-full rounded-lg bg-white h-14 px-3 mb-3 mt-2 outline-none" type="text" placeholder="First name" required>
+                <input name="last_name" class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="text" placeholder="Last name" required>
+                <input name="email" class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="email" placeholder="Email" required>
+                <input name="password" class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="password" placeholder="Create a password" required>
+                <input class="w-full rounded-lg bg-white h-14 px-3 mb-3 outline-none" type="password" placeholder="Confirm password" required>
                 <button name="submit" class="w-full bg-black text-white font-normal text-lg h-14 rounded-lg hover:bg-opacity-90 cursor-pointer" type="submit">Sign In</button>
             </div>
             <a href="index.html">
                 <p class="alreadyHaveAccountText font-semibold">Already have any account? <span>Sign In</span></p>
             </a>
         </div>     
-    </div>
+    </form>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
