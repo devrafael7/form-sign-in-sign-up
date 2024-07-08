@@ -5,15 +5,35 @@
     transition: .5s ease-out;
 }
 
+body {
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
 body .dontHaveAccountText span{
     color: $soft-purple;
 }
 
-body.dark .alreadyHaveAccountText span {
+body .alreadyHaveAccountText span {
     color: $soft-purple;
 }
 
 //dark mode section
+
+
+body {
+    background: $dark-color;
+}
+
+body.dark {
+    background: $light-color;
+}
+
 
 body.dark .backCard{
     @include reverseAverageDarkContent();
@@ -63,4 +83,38 @@ body.dark .mainCard button{
 body.dark .signUpTitle {
     color: $text-black;
 }
+
+@keyframes fadeInX {
+    from {
+        opacity: 0;
+        transform: translateX(10%);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInY {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+body  {
+    animation: fadeInY 1s ease-out; 
+}
+
+body.dark  {
+    animation: fadeInX 1s ease-out; 
+}
+
 
