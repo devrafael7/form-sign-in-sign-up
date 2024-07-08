@@ -5,7 +5,8 @@
     transition: .5s ease-out;
 }
 
-body {
+body  {
+    animation: fadeInY 1s ease-out; 
     overflow-y: scroll; 
     scrollbar-width: none; 
     -ms-overflow-style: none; 
@@ -24,16 +25,6 @@ body .alreadyHaveAccountText span {
 }
 
 //dark mode section
-
-
-body {
-    background: $dark-color;
-}
-
-body.dark {
-    background: $light-color;
-}
-
 
 body.dark .backCard{
     @include reverseAverageDarkContent();
@@ -108,13 +99,5 @@ body.dark .signUpTitle {
     }
 }
 
-
-body  {
-    animation: fadeInY 1s ease-out; 
-}
-
-body.dark  {
-    animation: fadeInX 1s ease-out; 
-}
 
 

@@ -3,6 +3,7 @@
 }
 
 body {
+  animation: fadeInY 1s ease-out;
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -18,14 +19,6 @@ body .dontHaveAccountText span {
 
 body .alreadyHaveAccountText span {
   color: #6643b5;
-}
-
-body {
-  background: #000;
-}
-
-body.dark {
-  background: #fff;
 }
 
 body.dark .backCard {
@@ -98,11 +91,4 @@ body.dark .signUpTitle {
     opacity: 1;
     transform: translateX(0);
   }
-}
-body {
-  animation: fadeInY 1s ease-out;
-}
-
-body.dark {
-  animation: fadeInX 1s ease-out;
 }/*# sourceMappingURL=style.css.map */
