@@ -99,3 +99,14 @@ body.dark .signUpTitle {
     }
 }
 
+@media (min-width: 700px) and (max-width: 1024px) {
+    body.dark .darkModeBtn{
+        padding-left: 55px;
+    }
+
+    html {
+        font-size: 140%;
+    }
+}
+   
+

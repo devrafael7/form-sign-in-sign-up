@@ -91,4 +91,12 @@ body.dark .signUpTitle {
     opacity: 1;
     transform: translateX(0);
   }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  body.dark .darkModeBtn {
+    padding-left: 55px;
+  }
+  html {
+    font-size: 140%;
+  }
 }/*# sourceMappingURL=style.css.map */
