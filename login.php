@@ -14,12 +14,6 @@
         $user_db = "INSERT INTO user_info(`first_name`, `last_name`, `email`, `password`)
         VALUES('$first_name', '$last_name', '$email', '$password')";
 
-        if ($my_conection->query($user_db)=== TRUE) {
-            echo("new account created succesfully");
-        } else {
-            echo("error :" . $user_db . $my_conection->error);
-        }
-
         $my_conection->close();
     }
 

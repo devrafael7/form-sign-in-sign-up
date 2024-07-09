@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lg:py-10">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="w-full h-min-screen">
-    <div class="w-full h-screen bg-black flex justify-center pt-14 backCard relative">
+<body class="w-full h-screen lg:px-80 lg:py-20 flex justify-center items-center lg:h-screen lg:overflow-hidden">
+    <div class="w-full h-full bg-black flex justify-center pt-14 backCard relative lg:rounded-xl lg:h-full lg:justify-center lg:pt-7">
         <div class="darkModeBtn cursor-pointer w-16 h-7 bg-white absolute top-7 left-5 rounded-full px-1 py-1">
             <div class="w-5 h-full bg-black rounded-full">
     
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <form action=""id="card-login" class="mainCard py-5 px-7 h-4/6 bg-gray-100 w-full absolute bottom-0 flex flex-col items-center pt-10 gap-2">
+        <form action=""id="card-login" class="mainCard py-5 px-7 h-4/6 bg-gray-100 w-full absolute bottom-0 flex flex-col items-center pt-10 gap-2 lg:h-auto">
             <div class="flex flex-col items-center w-full h-auto mb-10">
                 <h1 class="text-3xl font-medium mb-7">Sign In</h1>
                 <input name="existing_name" class="w-full rounded-lg bg-white h-12 px-3 mb-2 outline-none" type="email" placeholder="Type your email" required>
@@ -33,6 +33,7 @@
             </a>
         </div>     
     </form>
+    
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
