@@ -6,11 +6,6 @@ if (darkModeEnabled) {
         allBackArrows.addEventListener('click', ()=> {
             allBackArrows.classList.add('hidden');
         })
-
-        const whiteBackArrow = document.querySelector('.whiteBackArrow');
-        whiteBackArrow.classList.add('hidden');
-        const blackBackArrow = document.querySelector('.blackBackArrow');
-        blackBackArrow.classList.remove('hidden');
     })
 }
 
